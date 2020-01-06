@@ -1,7 +1,8 @@
- using UnityEngine;
- using System.Collections;
  using System.IO;
- 
+ using System.Text;
+ using System.Threading;
+ using UnityEngine;
+
  // Screen Recorder will save individual images of active scene in any resolution and of a specific image format
  // including raw, jpg, png, and ppm.  Raw and PPM are the fastest image formats for saving.
  //
@@ -21,7 +22,7 @@
      public bool optimizeForManyScreenshots = true;
  
      // configure with raw, jpg, png, or ppm (simple raw format)
-     public enum Format { RAW, JPG, PNG, PPM };
+     public enum Format { RAW, JPG, PNG, PPM }
      public Format format = Format.PPM;
  
      // folder to write output (defaults to data path)
@@ -31,11 +32,11 @@
      private Rect rect;
      private RenderTexture renderTexture;
      private Texture2D screenShot;
-     private int counter = 0; // image #
+     private int counter; // image #
  
      // commands
-     private bool captureScreenshot = false;
-     private bool captureVideo = false;
+     private bool captureScreenshot;
+     private bool captureVideo;
  
      // create a unique filename using a one-up variable
      private string uniqueFilename(int width, int height)
@@ -53,7 +54,7 @@
              folder += "/screenshots";
  
              // make sure directoroy exists
-             System.IO.Directory.CreateDirectory(folder);
+             Directory.CreateDirectory(folder);
  
              // count number of files of specified format in folder
              string mask = string.Format("screen_{0}x{1}*.{2}", width, height, format.ToString().ToLower());
@@ -98,7 +99,7 @@
              }
          
              // get main camera and manually render scene into rt
-             Camera camera = this.GetComponent<Camera>(); // NOTE: added because there was no reference to camera in original script; must add this script to Camera
+             Camera camera = GetComponent<Camera>(); // NOTE: added because there was no reference to camera in original script; must add this script to Camera
              camera.targetTexture = renderTexture;
              camera.Render();
  
@@ -133,15 +134,15 @@
              {
                  // create a file header for ppm formatted file
                  string headerStr = string.Format("P6\n{0} {1}\n255\n", rect.width, rect.height);
-                 fileHeader = System.Text.Encoding.ASCII.GetBytes(headerStr);
+                 fileHeader = Encoding.ASCII.GetBytes(headerStr);
                  fileData = screenShot.GetRawTextureData();
              }
  
              // create new thread to save the image to file (only operation that can be done in background)
-             new System.Threading.Thread(() =>
+             new Thread(() =>
              {
                  // create file and write optional header with image bytes
-                 var f = System.IO.File.Create(filename);
+                 var f = File.Create(filename);
                  if (fileHeader != null) f.Write(fileHeader, 0, fileHeader.Length);
                  f.Write(fileData, 0, fileData.Length);
                  f.Close();

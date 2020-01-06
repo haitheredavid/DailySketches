@@ -4,15 +4,15 @@
 
 namespace UnityEngine.Rendering.HighDefinition
 {
-    [GenerateHLSL(PackingRules.Exact)]
+    [GenerateHLSL( )]
     public enum HDShadowFilteringQuality
     {
         Low = 0,
         Medium = 1,
-        High = 2,
+        High = 2
     }
 
-    [GenerateHLSL(PackingRules.Exact)]
+    [GenerateHLSL( )]
     public enum ShaderOptions
     {
         CameraRelativeRendering = 1, // Rendering sets the origin of the world to the position of the primary (scene view) camera
@@ -32,7 +32,7 @@ namespace UnityEngine.Rendering.HighDefinition
 
         DeferredShadowFiltering = HDShadowFilteringQuality.Medium,
         BarnDoor = 0
-    };
+    }
 
     // Note: #define can't be use in include file in C# so we chose this way to configure both C# and hlsl
     // Changing a value in this enum Config here require to regenerate the hlsl include and recompile C# and shaders

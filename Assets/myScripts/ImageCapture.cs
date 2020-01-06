@@ -1,31 +1,35 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
+using System.Text;
+using System.Threading;
 using UnityEngine;
 
 public class ImageCapture : MonoBehaviour {
 
+    // 4k = 3840 x 2160   1080p = 1920 x 1080
     public int resWidth = 1920;
     public int resHeight = 1080;
 
+    public bool optimizeForManyScreenshots = true;
+
     public Camera screenCamera;
 
-    public ImageType format = ImageType.PNG;
-
-    public enum ImageType {
+    public enum Format {
 
         JPG,
-        PNG
+        PNG,
+        RAW,
+        PPM
 
     }
 
+    public Format format = Format.PNG;
+
     public string folder;
 
-    private bool _captureScreen = false;
-    private int counter = 0;
+    private bool _captureImage;
+    private bool _captureVideo;
 
-
+    private int counter;
 
     private string BuildFileName( int width, int height )
         {
@@ -51,11 +55,14 @@ public class ImageCapture : MonoBehaviour {
             return filename;
         }
 
-
-
     public void TakeScreenShot( )
         {
-            _captureScreen = true;
+            _captureImage = true;
+        }
+
+    public void TakeBurstScreenShots( )
+        {
+            _captureVideo = true;
         }
 
     private void Update( )
@@ -63,16 +70,25 @@ public class ImageCapture : MonoBehaviour {
             if ( Input.GetKeyDown( KeyCode.A ) ) {
                 TakeScreenShot( );
             }
+
+            _captureVideo = Input.GetKey( KeyCode.B );
         }
 
     private void LateUpdate( )
         {
-            if ( !_captureScreen ) return;
+            if ( !_captureImage || !_captureVideo ) return;
 
+            _captureImage = true;
+
+            //create render texture that will catch the rendering
             RenderTexture rt = new RenderTexture( resWidth, resHeight, 24 );
+            //link render texture to camera
             screenCamera.targetTexture = rt;
+            //set texture format 
             Texture2D screenShot = new Texture2D( resWidth, resHeight, TextureFormat.RGB24, false );
+            //render 
             screenCamera.Render( );
+            // not sure 
             RenderTexture.active = rt;
             screenShot.ReadPixels( new Rect( 0, 0, resWidth, resHeight ), 0, 0 );
             // reset  
@@ -85,24 +101,32 @@ public class ImageCapture : MonoBehaviour {
             byte[ ] fileHeader = null;
             byte[ ] fileData = null;
 
-            if ( format == ImageType.PNG ) {
+            if ( format == Format.RAW ) {
+                fileData = screenShot.GetRawTextureData( );
+            } else if ( format == Format.PNG ) {
                 fileData = screenShot.EncodeToPNG( );
-            } else if ( format == ImageType.JPG ) {
+            } else if ( format == Format.JPG ) {
                 fileData = screenShot.EncodeToJPG( );
+            } else {
+                string headerStr = string.Format( "P6\n{0} {1}\n255\n", resWidth, resHeight );
+                fileHeader = Encoding.ASCII.GetBytes( headerStr );
+                fileData = screenShot.GetRawTextureData( );
             }
 
-            new System.Threading.Thread( ( ) => {
-                var f = System.IO.File.Create( filename );
+            new Thread( ( ) => {
+                var f = File.Create( filename );
                 if ( fileHeader != null ) f.Write( fileHeader, 0, fileHeader.Length );
                 f.Write( fileData, 0, fileData.Length );
                 f.Close( );
                 Debug.Log( $"Wrote screenshot {filename} of size {fileData.Length}" );
             } ).Start( );
 
-            Destroy( rt );
-            rt = null;
-            screenShot = null;
-            _captureScreen = false;
+            if ( optimizeForManyScreenshots == false ) {
+                Destroy( rt );
+                rt = null;
+                screenShot = null;
+                _captureImage = false;
+            }
         }
 
 }
