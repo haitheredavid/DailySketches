@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce26a193-d5fc-4dbe-8cd7-e51fa2f81e99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VFXDefaultResources.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VFXDefaultResources.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/myScenes/200301/LineMaterial.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/myScenes/200301/LineMaterial.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/myScenes/200301/LineSketch.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/myScenes/200301/LineSketch.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/myScenes/200301/Visualizer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/myScenes/200301/Visualizer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LocalPackages.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LocalPackages/com.unity.render-pipelines.high-definition-config.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/myScenes/200301.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/myScenes/200301.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/myScripts/ImageCapture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/myScripts/ImageCapture.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/myScripts/ScreenRecorder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/myScripts/ScreenRecorder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocalPackages/com.unity.render-pipelines.high-definition-config/Runtime/ShaderConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LocalPackages/com.unity.render-pipelines.high-definition-config/Runtime/ShaderConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/myScenes/200301/Visualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/myScenes/200301/Visualizer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,10 +54,10 @@
     <property name="settings.editor.selected.configurable" value="ParameterNameHintsOptionsId" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="4392">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="4392" />
+      <option name="pid" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -111,6 +92,7 @@
       <workItem from="1578186621408" duration="638000" />
       <workItem from="1578250978556" duration="6834000" />
       <workItem from="1578277457233" duration="11108000" />
+      <workItem from="1578367717166" duration="1095000" />
     </task>
     <servers />
   </component>
@@ -124,7 +106,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
