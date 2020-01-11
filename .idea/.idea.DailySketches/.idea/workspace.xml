@@ -2,12 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce26a193-d5fc-4dbe-8cd7-e51fa2f81e99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/myScenes/200308.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dMaterials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dProfiles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dScripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dSketches.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dSketches/200309.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dSketches/200309/200309.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dSketches/200309/200309.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dTextures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dVFX.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/myScenes/200301/LineSketch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/myScenes/200301/LineSketch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/myScenes/200301/Visualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/myScenes/200301/Visualizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200308/200308.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/dSketches/200308/200308.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200308/LineHomie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/dSketches/200308/LineHomie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/myMaterials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/myScenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/myScripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mySketches.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/myTextures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/myVFX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/myVolumns.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +33,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/myScenes/200301/Visualizer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/myScenes/200308/LineHomie.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/myScripts/ScreenRecorder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/myScripts/ImageCapture.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7D22F8E7-1133-418C-87C7-B26EA181F3E3/d3/997ecfb1/LineRenderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualeffectgraph@7.1.7/Runtime/Utilities/Playables/VisualEffectActivation.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/myScenes/200301/LineSketch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/dSketches/200308/LineHomie.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -34,6 +45,7 @@
         <option value="$PROJECT_DIR$/Assets/myScenes/200301/LineSketch.cs" />
         <option value="$PROJECT_DIR$/Assets/myScenes/200301/Visualizer.cs" />
         <option value="$PROJECT_DIR$/Assets/myScenes/200308/LineHomie.cs" />
+        <option value="$PROJECT_DIR$/Assets/dSketches/200308/LineHomie.cs" />
       </list>
     </option>
   </component>
@@ -101,6 +113,7 @@
       <workItem from="1578367717166" duration="1095000" />
       <workItem from="1578543387732" duration="7651000" />
       <workItem from="1578580277088" duration="754000" />
+      <workItem from="1578782059026" duration="1784000" />
     </task>
     <servers />
   </component>
@@ -194,9 +207,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="555" y="22" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1578252015514" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1578548925443">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1578782585132">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1578548925443" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1578782585132" />
   </component>
 </project>

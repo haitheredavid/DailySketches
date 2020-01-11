@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro.EditorUtilities;
-using UnityEngine;
+﻿using UnityEngine;
 using Random = UnityEngine.Random;
 
 public abstract class Doodle {
@@ -94,10 +90,44 @@ public class LineCreator {
 
 }
 
+public static class Builder {
+
+    public static Object DoodlePoint( Vector3 pPos, string pName, Material pMat, Vector3 pScale )
+        {
+            GameObject point = GameObject.CreatePrimitive( PrimitiveType.Sphere );
+            point.GetComponent<MeshRenderer>( ).material = pMat;
+            point.transform.position = pPos;
+            point.transform.localScale = pScale;
+            point.name = pName;
+            return point;
+        }
+
+    public static GameObject[ ] DoodlePoint( Vector3[ ] pPos, string pName, Material pMat, Vector3 pScale )
+        {
+            GameObject point = GameObject.CreatePrimitive( PrimitiveType.Sphere );
+            point.GetComponent<MeshRenderer>( ).sharedMaterial = pMat;
+            point.transform.localScale = pScale;
+            point.name = pName;
+
+            GameObject[ ] points = new GameObject[ pPos.Length ];
+
+            for ( int i = 0; i < pPos.Length; i++ ) {
+                points[ i ] = Object.Instantiate( point );
+                points[ i ].transform.position = pPos[ i ];
+            }
+
+            Object.Destroy( point );
+            return points;
+        }
+
+}
+
 public class LineHomie : MonoBehaviour {
 
     public int pointCount = 10;
     public int lineCount = 10;
+    public float scale = 0.1f;
+    public Material pointMaterial;
     public int cloudDensity = 1;
     public Vector3 size = new Vector3( 3, 3, 3 );
 
@@ -110,38 +140,28 @@ public class LineHomie : MonoBehaviour {
     public void Awake( )
         {
             _renderer = GetComponent<LineRenderer>( );
-            // _lineObj = new GameObject( "Line" );
-            // var temp = _lineObj.AddComponent<LineRenderer>( );
-            // temp = _renderer
-            // _line.GetComponent<LineRenderer>( ) = _renderer;
         }
 
-    public void Start( )
+
+    public void BuildCloud( )
         {
             _cloud = _creator.CreateRandomCloud( transform.position, pointCount, cloudDensity, size );
-            var pointContainer = new GameObject("container");
-            var pointMesh = GameObject.CreatePrimitive( PrimitiveType.Sphere );
-            pointMesh.transform.localScale = Vector3.one * 0.2f;
 
-            
-            Vector3[] tempPoints = new Vector3[pointCount];
+            var pointContainer = new GameObject( "container" );
+
+            Vector3[ ] tempPoints = new Vector3[ pointCount ];
             int index = 0;
             foreach ( var point in _cloud.Points ) {
-                var p = Instantiate( pointMesh, pointContainer.transform );
-                p.name = "point";
-                p.transform.position = point.Position;
+                var p = (GameObject) Builder.DoodlePoint( point.Position, "point", pointMaterial, Vector3.one * scale );
+
+                p.transform.SetParent( pointContainer.transform );
                 tempPoints[ index ] = point.Position;
                 index++;
-                
             }
-            Destroy( pointMesh );
-            
             _renderer.positionCount = tempPoints.Length;
             _renderer.SetPositions( tempPoints );
 
             tempPoints = null;
-
-
         }
 
 }
