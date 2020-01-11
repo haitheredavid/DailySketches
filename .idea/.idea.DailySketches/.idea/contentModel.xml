@@ -11,6 +11,9 @@
             <e p="LineSketch.cs" t="Include" />
             <e p="Visualizer.cs" t="Include" />
           </e>
+          <e p="200308" t="Include">
+            <e p="LineHomie.cs" t="Include" />
+          </e>
         </e>
         <e p="myScripts" t="Include">
           <e p="ImageCapture.cs" t="Include" />

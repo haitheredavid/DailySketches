@@ -19,12 +19,12 @@ public class Visualizer : MonoBehaviour {
             
             GL.Begin( GL.LINES );
 
-            foreach ( var line in sketch.Lines ) {
-                GL.Color( line.StartColor );
-                GL.Vertex( line.Start );
-                GL.Color( line.EndColor );
-                GL.Vertex( line.End );
-            }
+            // foreach ( var line in sketch.Lines ) {
+            //     GL.Color( line.StartColor );
+            //     GL.Vertex( line.Start );
+            //     GL.Color( line.EndColor );
+            //     GL.Vertex( line.End );
+            // }
 
             GL.End( );
             GL.PopMatrix(  );

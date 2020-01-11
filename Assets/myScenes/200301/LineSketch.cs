@@ -1,14 +1,5 @@
 ﻿using UnityEngine;
 
-public class Line {
-
-    public Vector3 Start;
-    public Vector3 End;
-    public Color StartColor;
-    public Color EndColor;
-
-}
-
 [ExecuteAlways]
 public class LineSketch : MonoBehaviour {
 
@@ -72,8 +63,6 @@ public class LineSketch : MonoBehaviour {
                 temp[ i ] = new Line {
                     Start = points[ a ],
                     End = points[ b ],
-                    StartColor = startColor,
-                    EndColor = endColor
                 };
 
                 a++;
