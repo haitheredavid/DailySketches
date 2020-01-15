@@ -7,16 +7,23 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="dScripts" t="Include">
+          <e p="DoodleHandler.cs" t="Include" />
           <e p="ImageCapture.cs" t="Include" />
           <e p="ScreenRecorder.cs" t="Include" />
         </e>
         <e p="dSketches" t="Include">
-          <e p="200301" t="Include">
+          <e p="200103" t="Include">
             <e p="LineSketch.cs" t="Include" />
             <e p="Visualizer.cs" t="Include" />
           </e>
-          <e p="200308" t="Include">
+          <e p="200108" t="Include">
             <e p="LineHomie.cs" t="Include" />
+          </e>
+          <e p="200109" t="Include">
+            <e p="BoxSketch.cs" t="Include" />
+          </e>
+          <e p="200110" t="Include">
+            <e p="BoxOutline.cs" t="Include" />
           </e>
         </e>
       </e>

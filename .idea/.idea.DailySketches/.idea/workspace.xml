@@ -2,27 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce26a193-d5fc-4dbe-8cd7-e51fa2f81e99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/dMaterials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/dProfiles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/dScripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/dSketches.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/dSketches/200309.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/dSketches/200309/200309.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/dSketches/200309/200309.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/dTextures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/dVFX.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dMaterials/point.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dMaterials/point.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dScripts/DoodleHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dScripts/DoodleHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/dSketches/200110/BoxOutline.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DailySketches/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200308/200308.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/dSketches/200308/200308.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200308/LineHomie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/dSketches/200308/LineHomie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/myMaterials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/myScenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/myScripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/mySketches.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/myTextures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/myVFX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/myVolumns.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200301.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200301/200301.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200301/200301.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200301/LineMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200301/LineMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200301/LineSketch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200301/LineSketch.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200301/Sky and Fog Settings Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200301/Sky and Fog Settings Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200301/Visualizer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200301/Visualizer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200306.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200306/200306.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200306/200306.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200306/Lines.vfx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200306/Lines.vfx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200308.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200308/200308.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200308/200308.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200308/LineHomie.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200308/LineHomie.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200309.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200309/200309.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/dSketches/200309/200309.unity.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +43,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/dScripts/DoodleHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7D22F8E7-1133-418C-87C7-B26EA181F3E3/d3/997ecfb1/LineRenderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualeffectgraph@7.1.7/Runtime/Utilities/Playables/VisualEffectActivation.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/dSketches/200308/LineHomie.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/dSketches/200109/BoxSketch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/dSketches/200110/BoxOutline.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -45,7 +57,13 @@
         <option value="$PROJECT_DIR$/Assets/myScenes/200301/LineSketch.cs" />
         <option value="$PROJECT_DIR$/Assets/myScenes/200301/Visualizer.cs" />
         <option value="$PROJECT_DIR$/Assets/myScenes/200308/LineHomie.cs" />
+        <option value="$PROJECT_DIR$/Assets/dSketches/200309/200309.cs" />
+        <option value="$PROJECT_DIR$/Assets/dSketches/200301/LineSketch.cs" />
         <option value="$PROJECT_DIR$/Assets/dSketches/200308/LineHomie.cs" />
+        <option value="$PROJECT_DIR$/Assets/dSketches/200309/BoxSketch.cs" />
+        <option value="$PROJECT_DIR$/Assets/dSketches/200110/BoxOutline.cs" />
+        <option value="$PROJECT_DIR$/Assets/dSketches/200109/BoxSketch.cs" />
+        <option value="$PROJECT_DIR$/Assets/dScripts/DoodleHandler.cs" />
       </list>
     </option>
   </component>
@@ -69,7 +87,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/sdk" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="ParameterNameHintsOptionsId" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -114,6 +132,7 @@
       <workItem from="1578543387732" duration="7651000" />
       <workItem from="1578580277088" duration="754000" />
       <workItem from="1578782059026" duration="1784000" />
+      <workItem from="1579051569034" duration="9068000" />
     </task>
     <servers />
   </component>
@@ -203,13 +222,21 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="309" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1578290533398" />
-    <state x="555" y="22" key="SettingsEditor" timestamp="1578252015514">
+    <state x="498" y="60" key="RiderGenerateDialog" timestamp="1579054035261">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="555" y="22" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1578252015514" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1578782585132">
+    <state x="498" y="60" key="RiderGenerateDialog/0.0.1536.834@0.0.1536.834" timestamp="1579054035261" />
+    <state x="84" y="31" width="1452" height="711" key="SettingsEditor" timestamp="1579052585378">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1578782585132" />
+    <state x="84" y="31" width="1452" height="711" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1579052585378" />
+    <state x="426" y="190" key="run.anything.popup" timestamp="1579057002528">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="426" y="190" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1579057002528" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1579057057142">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1579057057142" />
   </component>
 </project>

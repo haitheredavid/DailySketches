@@ -199,8 +199,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157887022}
-  m_LocalRotation: {x: 0.039859794, y: 0.8457525, z: -0.063812576, w: 0.52824414}
-  m_LocalPosition: {x: -1.4305668, y: 1.0780535, z: 1.1549554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -333,8 +333,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1685493415}
-  - component: {fileID: 1685493416}
   - component: {fileID: 1685493417}
+  - component: {fileID: 1685493416}
   m_Layer: 0
   m_Name: Line
   m_TagString: Untagged
@@ -365,13 +365,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1685493414}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07ec150fe4faa654b957f34ed9729a34, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f3182c65d514d84aab5e6964eaafa00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointCount: 100
-  lineCount: 10
-  cloudDensity: 1
-  size: {x: 3, y: 3, z: 3}
+  boxBounds: {x: 5, y: 5, z: 5}
+  effect: 4.33
 --- !u!120 &1685493417
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -379,7 +377,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685493414}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
